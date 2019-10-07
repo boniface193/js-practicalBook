@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style media="Screen">
+    span{
+        background-color:#4CAF50;
+        color:aliceblue;
+        float: right;
+        widows: inherit;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;  
+    }
+    ul{
+        background-color: #333;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 30%;
+    }
+    li{
+        float: left;
+    }
+   li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+            }
+    li a:hover{
+        background-color: #111;;
+    }
+    .active{
+        background-color: #4CAF50;
+    }
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+   
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="main.js"></script>
+
+    <fieldset>
+            <legend>Local Storage</legend>
+    
+            <input type="text" id="inpKey" placeholder="Insert Key...">
+            <input type="text" id="inpValue" placeholder="Insert Values...">
+            <button type="button" id="inpButton" >Insert Data</button>
+
+
+        </fieldset>
+
+        <fieldset>
+                <legend>OutPut</legend>
+        
+                <div id="IsOutput"></div>
+    
+    
+            </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+    <title>Document</title>
+    <style>
+
+body {
+    font-family: 'Raleway', sans-serif;
+        height: 100vh;
+        background: #333 url('../img/facts-bg.jpg') 
+        no-repeat center center / cover;
+        color: #ccc;
+        overflow:hidden;
+}
+
+.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 0 3rem;
+    }
+
+    h1, h2 {
+        font-weight: 200;
+        margin: 0.4rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        color: #aaa;
+    }
+
+/* * { color:#fff; text-decoration: none;} */
+
+@media(min-width: 120px){
+        h1{
+            font-size: 5rem;
+        }   
+    }
+
+    @media(max-width: 800px){
+        .container{
+            padding: 0 1rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+    @media(max-width: 500px){
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+
+    /* body{
+        font-family: 'Raleway', sans-serif;
+        height: 100vh;
+        background: #333 url('../img/facts-bg.jpg') 
+        no-repeat center center / cover;
+        color: #ccc;
+        overflow:hidden;
+
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 0 3rem;
+    }
+
+    h1, h2 {
+        font-weight: 200;
+        margin: 0.4rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        color: #aaa;
+    }
+
+    @media(min-width: 120px){
+        h1{
+            font-size: 5rem;
+        }   
+    }
+
+    @media(max-width: 800px){
+        .container{
+            padding: 0 1rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+    @media(max-width: 500px){
+        h1{
+            font-size: 2.5rem;
+        }
+    } */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+                <div class="typewrite" data-period="3000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+                  <span class="wrap"></span>
+                </div>
+              </h1>
+        <h2>Welcome to My World</h2>
+    </div>
+
+    <!-- <div class="container">
+        <h1>Deboik Information</h1>
+        <span class="txt-type" data-period="2000" 
+        data-type='["Technology", "Developer", "Designer"]'>
+    </span>
+        <h2>Welcome to My World</h2>
+    </div> -->
+    <script src="index.js"></script>
+</body>
+</html>
