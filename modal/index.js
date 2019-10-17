@@ -1,3 +1,20 @@
+
+
+$(this).ready(function(){
+    $("#power").keyup(function(){
+        $("#showType").html($(this).val())
+    })
+})
+
+
+
+
+
+
+
+
+
+
 // //get modal element
 // var modal = document.getElementById('simpleModal');
 // // get open modal button 
@@ -76,4 +93,5 @@ function closeDown() {
     modal.style.display = 'none';
     
 }
+
 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+    <title></title>
+</head>
+<body>
+
+<legend>
+    <h3>Items</h3>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+    <div id="output">
+
+    </div>
+    <br>
+    <div id="move" style="background: 
+    rgb(126, 89, 89); width:400px; height:200px ">
+    <h1>hello</h1>
+    </div>
+</legend>
+
+<div id="frm">
+    <form action="" >
+        <input type="text" 
+        placeholder="Your Name" id="txt">
+        <input type="tel" 
+        placeholder="Your Phone Number">
+        <input type="submit" id="submit">
+        </form>
+    <button id="button">Button</button>
+</div>
+    <script>
+    // This is Dom first practical//
+// var form = 
+// document.getElementsByTagName('button');
+// var input = 
+// document.getElementsByTagName('input');
+// var legend = 
+// document.getElementsByTagName('legend');
+// var li = 
+// document.getElementsByTagName('li');
+// var odd = 
+// document.querySelectorAll
+// ('li:nth-child(odd)');
+// var even = 
+// document.querySelectorAll
+// ('li:nth-child(even)');
+// var submit = document.querySelector
+// ('input[type="submit"]');
+// submit.value = 'Send';
+// var frm = document.querySelector('#frm');
+
+// legend[0].style.border = 'solid #f4f4f4';
+
+// // li[0].style.backgroundColor = '#f4f4f4';
+// // li[1].style.backgroundColor = '#ccc';
+// // li[2].style.backgroundColor = '#f4f4f4';
+// // li[3].style.backgroundColor = '#ccc';
+
+// frm.parentNode.style.backgroundColor = 
+// '#ccc';
+// // frm.nextSibling.style.color = 'green';
+// console.log(frm.nextElementSibling);
+
+// for(i = 0; i < li.length; i++){
+//     li[i].style.listStyleType = 'none';
+//     li[i].style.padding = '5px';
+    
+// }
+
+// for(i = 0; i < odd.length; i++){
+//  odd[i].style.backgroundColor = '#f4f4f4';
+// }
+
+// for(i = 0; i < even.length; i++){
+//     even[i].style.backgroundColor = '#ccc';
+// }
+
+// // form[0].style.backgroundColor = 'blue';
+// // form[0].style.border = 'none';
+// // form[0].style.padding = '10px';
+// // form[0].style.borderRadius = '5px';
+
+
+// // input
+
+// for(var i = 0; i < input.length; i++){
+//     input[i].style.borderRadius = '5px';
+//     input[i].style.borderColor = 'blue';
+//     input[i].style.padding = '10px';
+//     input[i].style.marginTop = '10px';
+// }
+
+// it Ends here//
+
+
+var button = 
+document.getElementById('button');
+ var move = 
+ document.getElementById('move');
+ var output = 
+ document.getElementById('output');
+
+button
+.addEventListener('mousedown', myButton);
+ move.addEventListener('mousemove', moving);
+
+function myButton(e){
+    console.log('Type of Event is ' +e.type);
+}
+
+ function moving(e){
+     console.log('Event Type '+e.type);
+     output.innerHTML = '<h3>Mousex: '+e.offsetX+
+     '</h3><h3>MouseY: '+e.offsetY+' </h3>';
+
+ }
+
+
+    </script>
+</body>
+</html>
